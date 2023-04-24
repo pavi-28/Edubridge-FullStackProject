@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration Form</title>
+</head>
+<!--<link rel="stylesheet" href="Registration.css">-->
+<!--Here we are creating registration page for new user-->
+<body>
+    <div class="container">
+        <div class="image">
+            <div class="form-box">
+                <div class="form">
+                    <form>
+                        <h2>Signup</h2>
+                        <div class="input-box">
+                            <input type="text" required="required" maxlength="20" name="username"  [(ngModel)]="username">
+                            <label for="">UserName</label>
+                        </div>
+                        <div class="input-box">
+                            <input type="text" required="required" maxlength="10" name="phonenumber" [(ngModel)]="phonenumber">
+                            <label for="">Phone Number</label>
+                        </div>
+                        <div class="input-box">
+                            <input type="Email" required="required" name="email" [(ngModel)]="email">
+                            <label for="">Email</label>
+                        </div>
+                        <div class="input-box">
+                            <input type="password" required="required" maxlength="8" name="password" [(ngModel)]="password">
+                            <label for="">Password</label>
+                        </div>
+                        <div class="input-box">
+                            <input type="password" required="required" maxlength="8" name="confirmpassword"  [(ngModel)]="confirmpassword">
+                            <label for="">Confirm Password</label>
+                        </div>
+                        <div class="group">
+                            <span>
+                                <input type="checkbox" class="remember" required="required">Remember me?</span>
+                        </div>
+                        <button (click)="checkPassword()">Sign up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

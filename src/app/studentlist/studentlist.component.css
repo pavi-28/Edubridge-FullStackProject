@@ -1,0 +1,126 @@
+div {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1%;
+    bottom: 25%;
+}
+
+body {
+    background: none;
+}
+
+h2 {
+    margin-left: 75%;
+}
+
+.input-group {
+    margin-left: 4px;
+}
+
+.btn5 {
+    margin-left: 8%;
+    align-items: center;
+}
+
+tr {
+    text-align: center;
+}
+
+table {
+    font-size: 20px;
+    /*padding: 50px;*/
+    left: 15%;
+    width: 200%;
+    margin-left: 5%;
+    color: black;
+    font-family: 'Times New Roman';
+    font-weight: 300;
+    bottom: 25%;
+    background-color: rgb(80, 157, 211);
+}
+
+.btn1 {
+    position: relative;
+    display: inline-block;
+    padding: 5px 5px;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.btn1:hover {
+    color: rgb(29, 64, 64);
+    background: rgb(240, 193, 193);
+    box-shadow: 0 0 10px aqua, 0 0 40px aqua, 0 0 80px aqua;
+    transition-delay: 0.2s;
+}
+
+.btn2 {
+    position: relative;
+    display: inline-block;
+    padding: 5px 5px;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.btn2:hover {
+    color: rgb(29, 64, 64);
+    background: rgb(240, 193, 193);
+    box-shadow: 0 0 10px rgb(255, 0, 0), 0 0 40px rgb(255, 0, 0), 0 0 80px rgb(255, 0, 0);
+    transition-delay: 0.2s;
+}
+
+.btn3 {
+    position: relative;
+    display: inline-block;
+    padding: 5px 5px;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.btn3:hover {
+    color: rgb(29, 64, 64);
+    background: rgb(240, 193, 193);
+    box-shadow: 0 0 10px rgb(247, 35, 173), 0 0 40px rgb(247, 35, 173), 0 0 80px rgb(247, 35, 173);
+    transition-delay: 0.2s;
+}
+
+.btn4 {
+    position: relative;
+    display: inline-block;
+    padding: 5px 5px;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.btn4:hover {
+    color: rgb(29, 64, 64);
+    background: rgb(240, 193, 193);
+    box-shadow: 0 0 10px rgb(197, 92, 6), 0 0 40px rgb(197, 92, 6), 0 0 80px rgb(197, 92, 6);
+    transition-delay: 0.2s;
+}
+
+select {
+    position: absolute;
+    top: 70px;
+    right: 16px;
+    color: rgb(10, 11, 12);
+    background: rgb(115, 146, 141);
+    width: 10%;
+    height: 7%;
+}

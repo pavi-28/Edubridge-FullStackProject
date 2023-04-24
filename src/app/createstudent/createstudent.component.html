@@ -1,0 +1,85 @@
+
+<!--here we are adding a studentdetails-->
+<body>
+<div class="regform">
+    <div class="col-md-8 offset-md-3">
+        <h3> Create Student </h3>
+        <form (ngSubmit)="onSubmit()">
+
+            <div class="form-group">
+                <label> StudentName</label>
+                <input type="text" class="form-control" placeholder="Enter Name" id="studentName"
+                    data-bs-toggle="tooltip" title="enter name" [(ngModel)]="student.studentName"
+                    name="student.studentName">
+            </div><br>
+
+            <div class="form-group">
+                <label>Grade</label>
+                <input type="text" class="form-control" placeholder="Enter grade" id="grade" data-bs-toggle="tooltip"
+                    title="enter grade" [(ngModel)]="student.grade" name="student.grade">
+            </div><br>
+
+            <div class="form-group">
+                <label> ContactNo</label>
+                <input type="number" class="form-control" id="contactNo" placeholder="Contact" data-bs-toggle="tooltip"
+                    title="contactno" [(ngModel)]="student.contactNo" name="student.contactNo">
+            </div><br>
+
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Email" data-bs-toggle="tooltip"
+                    title="email" [(ngModel)]="student.email" name="student.email">
+            </div><br>
+
+            <div class="form-group">
+                <label>DateOfBirth</label>
+                <input type="date" class="form-control" id="dateOfBirth" placeholder="dateOfBirth"
+                    data-bs-toggle="tooltip" title="dateOfBirth" [(ngModel)]="student.dateOfBirth"
+                    name="student.dateOfBirth">
+            </div><br>
+
+            <div class="form-group">
+                <label>City</label>
+                <input type="text" class="form-control" id="city" placeholder="City" data-bs-toggle="tooltip"
+                    title="city" [(ngModel)]="student.city" name="student.city">
+            </div><br>
+
+            <button class="neon" type="submit" data-bs-toggle="tooltip" title="click me">Submit</button>
+        </form>
+    </div>
+</div>
+</body>
+
+
+<!--<div class="regform">
+        <h3>Create Student</h3>
+        <form (ngSubmit) = "onSubmit()" action="">    
+            <div class="input">
+                <label class="textlabel" for="name"> StudentName</label>
+                <input type="text" id="studentName" name="student.studentName" [(ngModel)] = "student.studentName">
+            </div>
+            <div class="input">
+                <label class="textlabel" for="">Grade</label>
+                <input type="" name="student.grade" id="grade"  [(ngModel)] = "student.grade">
+            </div>
+            <div class="input">
+                <label class="textlabel" for="">Email</label>
+                <input type="email" name="" id="" >
+            </div>
+            <div class="input">
+                <label class="textlabel" for="">ContactNo</label>
+                <input type="" name="student.contactNo" id="contactNo" [(ngModel)] = "student.contactNo">
+            </div>
+            <div class="input">
+                <label class="textlabel" for="">DateOfBirth</label>
+                <input type="date" name="student.dateOfBirth" id="dateOfBirth"  [(ngModel)] = "student.dateOfBirth" >
+            </div>
+            <div class="input">
+                <label class="textlabel" for="">City</label>
+                <input type="text" name="student.city" id="city"  [(ngModel)] = "student.city">
+            </div>
+            <div class="btn">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>-->

@@ -1,0 +1,75 @@
+<body>
+    <!--StudentList
+    here we see the student list and we want to update , delete and view the studentlist
+    we want to remove all the records, we want to be aware can't fetch the database again -->
+    <div class="list row">
+        <div class="col-md-8">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" name="firstName" placeholder="Search by StudentName"
+                    [(ngModel)]="firstName" />
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button" (click)="searchByName()">
+                        Search
+                    </button>
+                    
+                    <!--<button (click) = "fetchGrade()" class="btn5" style="width: 100%; height: 50%;">Fetch By Grade </button>-->
+                </div>
+            </div>
+        </div>
+    </div><br>
+    <select (change)="fetchByStandard($event)" name="gradeValue" id="dropdown" [(ngModel)]="gradeValue">
+        <option value="0" selected disabled>Select Grade</option>
+        <option value="6" default>Grade 6</option>
+        <option value="7">Grade 7</option>
+        <option value="8">Grade 8</option>
+        <option value="9">Grade 9</option>
+        <option value="10">Grade 10</option>
+        <option value="11">Grade 11</option>
+        <option value="12">Grade 12</option>
+    </select>
+
+   <!-- <button (click) = "fetchGrade()" class="btn5">Fetch By Grade </button>-->
+
+    <div class="col-md-6 offset-md-3" align="center">
+        <h2> Student List</h2>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th> StudentName</th>
+                    <th> Grade</th>
+                    <th> ContactNo</th>
+                    <th> Email</th>
+                    <th> DateOfBirth</th>
+                    <th> City</th>
+                    <th> Actions </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let student of students">
+                    <td> {{ student.studentName }} </td>
+                    <td> {{ student.grade }} </td>
+                    <td> {{ student.contactNo }} </td>
+                    <td> {{ student.email }} </td>
+                    <td> {{ student.dateOfBirth }} </td>
+                    <td> {{ student.city }} </td>
+                    <td>
+                        <button (click)=" confirmUpdate(student)" class="btn1"> Update</button>
+                        <button (click)="confirmDelete(student)" class="btn2" style="margin-left: 10px"> Delete</button>
+                        <button (click)="course(student)" class="btn4" style="margin-left: 10px">Course</button>
+                        <button (click)="studentDetails(student.studentId)" class="btn3" style="margin-left: 10px">
+                            View</button>
+                    </td>
+                </tr>
+                <tr *ngIf="students.length !== 0">
+                    <button class="m-3 btn btn-sm btn-danger" (click)="removeAllStudents()">
+                        Remove All Students
+                    </button>
+                    <a href="students"><button class="btn btn-primary">Back</button></a>
+                </tr>
+                <tr scope="row" *ngIf="students.length === 0">
+                    <td colspan="4" class="text-center"> No Record Found !!</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>

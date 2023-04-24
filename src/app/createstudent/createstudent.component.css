@@ -1,0 +1,84 @@
+/*button{
+    background-color: aqua;
+    border: none;
+}
+label .form-group{
+    font-size: 20px;
+    font-family: 'Times New Roman';
+    font-weight: 300;
+}
+h3{
+    margin-left: 45%;
+}*/
+    body{
+        margin-top: 4%;
+        margin-left: 40%;
+        margin-right: 20%;
+        background: rgb(119, 165, 230);
+    }
+    input{
+        width: 80%;
+        background: rgb(109, 134, 150);
+    }
+
+
+/*.regform{
+    width:400px;
+    margin:5px auto;
+    padding:10px 8px 8px;
+    background-color: rgba(79, 139, 200, 0.5);
+    color:rgb(34, 31, 31);
+    font-size:16px;
+    text-align: center;
+    border-radius:10px;
+    margin-left: 40%;
+}
+
+.regform h3{
+    text-align: center;
+    color:#121111;
+}
+
+.regform .textlabel{
+    display:block;
+}
+
+.input input{
+    width:100%;
+    font-size:1.2em;
+    border: 1px solid #006D77;
+    box-shadow:2px;
+    border-radius: 8px;
+    padding: 8px 8px;
+    box-sizing:border-box;
+    margin:5px 0px 15px;
+}
+
+input:focus{
+    background-color: #48b1b1;
+}
+
+.btn{
+    text-align: center;
+}
+
+button{
+    background-color: #29403e;
+    font-size:15px;
+    color:white;
+    justify-items: center;
+    margin-top:20px;
+    padding:8px 8px;
+    border-radius:8px;
+    border: 1px solid #689da2;
+    box-shadow:2px;
+}
+
+.radio input{
+    accent-color: #58a49d;
+    transform:scale(1.5);
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5); 
+}*/
+
+ 

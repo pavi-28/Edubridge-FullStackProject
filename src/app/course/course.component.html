@@ -1,0 +1,113 @@
+<!--<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+    aria-expanded="false">
+    Grades
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+    <li><a class="dropdown-item" href="#">6 to 10</a></li>
+    <li><a class="dropdown-item" href="#">11 to 12</a></li>
+
+  </ul>
+</div>-->
+
+
+<div class="d-flex flex-row bd-highlight mb-3" id="lowerGrade" *ngIf="checkLowerGrade()">
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+    <label class="form-check-label" for="flexCheckDefault">
+      <div class="card" style="width: 18rem;">
+        <img src="..\assets\maths1.jpg" width="250" height="250" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Maths</h5>
+          <p class="card-text">Mathematics is an area of knowledge that includes the topics of numbers, formulas and related structures, and quantities and their changes.</p>
+          <label for="MathTeacher">Staff : </label> &nbsp;
+          <span class="card-text" id="MathTeacher">Mrs.S.Sumathi, M.Sc.,B.Ed.</span>
+        </div>
+      </div>
+    </label>
+  </div>
+  &nbsp;&nbsp;
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+    <label class="form-check-label" for="flexCheckChecked">
+      <div class="card" style="width: 18rem;">
+        <img src="..\assets\science.jpg" width="250" height="250" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Science</h5>
+          <p class="card-text">Science is the study of physical and natural world through observations and experiment.Science is everywhere and is one of the most topics.
+           </p>
+           <label for="ScienceTeacher">Staff :</label> &nbsp;
+           <span class="card-text" id="ScienceTeacher">Mr.S.Subramanian, B.Sc.,B.Ed.</span>
+        </div>
+      </div>
+    </label>
+  </div>
+  &nbsp;
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+    <label class="form-check-label" for="flexCheckChecked">
+      <div class="card" style="width: 18rem;">
+        <img src="..\assets\social.jpg" width="250" height="250" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Social</h5>
+          <p class="card-text">Social science is one of the branches of science, devoted to the study of societies and the relationships among individuals within those societies.
+           </p>
+            <label for="SocialTeacher">Staff :</label> &nbsp;
+           <span class="card-text" id="SocialTeacher">Mr.V.Tamilarasan, B.A,B.Ed.</span>
+        </div>
+      </div>
+    </label>
+  </div>
+</div>
+
+
+<div class="d-flex flex-row bd-highlight mb-3" id="higherGrade" *ngIf="!checkLowerGrade()">
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+    <label class="form-check-label" for="flexCheckDefault">
+      <div class="card" style="width: 18rem;">
+        <img src="..\assets\commerce.jpg" width="250" height="250" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Commerce</h5>
+          <p class="card-text">Commerce is the exchange of goods and services between businesses. Commerce is the trade of goods, services,other things of value between companies or organizations.
+            </p>
+            <label for="SocialTeacher">Staff :</label> &nbsp;
+            <span class="card-text" id="SocialTeacher">Mr.S.Tamil, B.Com,B.Ed.</span>
+        </div>
+      </div>
+    </label>
+  </div>
+  &nbsp;
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+    <label class="form-check-label" for="flexCheckChecked">
+      <div class="card" style="width: 18rem;">
+        <img src="..\assets\computerscience.jpg" width="250" height="250" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Computer Science</h5>
+          <p class="card-text">Computer science is the study of computers and algorithmic processes, including their principles, their hardware and software designs, and their impact on society.
+            </p>
+            <label for="ComputerTeacher">Staff :</label> &nbsp;
+            <span class="card-text" id="ComputerTeacher">Mr.S.Devi, B.Sc,B.Ed.</span>
+        </div>
+      </div>
+    </label>
+  </div>
+  &nbsp;
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+    <label class="form-check-label" for="flexCheckChecked">
+      <div class="card" style="width: 18rem;">
+        <img src="..\assets\biomath.jpg" width="250" height="250" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">BioMaths</h5>
+          <p class="card-text">Biomathematics is an interdisciplinary field that uses mathematical techniques and tools to model natural and biological processes.It has been used in cellular neurobilogy.
+            </p>
+            <label for="BioMathTeacher">Staff :</label> &nbsp;
+            <span class="card-text" id="BioMathTeacher">Mr.B.Ramya, B.Sc,B.Ed.</span>
+        </div>
+      </div>
+    </label>
+  </div>
+</div>
+<!--<button class="btn btn-secondary">View All Courses</button>-->

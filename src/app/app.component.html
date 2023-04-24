@@ -1,0 +1,49 @@
+<!--here we are creating a navigation bar for login, logout, contact, about us, studentlist, addStudent and profilecard-->
+
+<body>
+  <nav class="navbar navbar-expand-sm  navbar-dark">
+    <img src="..\assets\logo3.jpg" width="70" height="70">
+    <label class="logo">Student Management</label>
+    <ul class="navbar-nav">
+      <!--<li class="nav-item">
+        <a *ngIf="loginService.isUserLoggedIn()" routerLink="home" routerLinkActive="active" class="nav-link">Home</a>
+      </li>-->
+      <li class="nav-item">
+        <a *ngIf="loginService.isUserLoggedIn()" routerLink="about" routerLinkActive="active" class="nav-link" data-bs-toggle="tooltip" title="About">About</a>
+      </li>
+      <li class="nav-item">
+        <a *ngIf="loginService.isUserLoggedIn()" routerLink="students" routerLinkActive="active"
+          class="nav-link" data-bs-toggle="tooltip" title="StudentList">StudentList</a>
+      </li>
+      <li class="nav-item">
+        <a *ngIf="loginService.isUserLoggedIn()" routerLink="createstudent" routerLinkActive="active"
+          class="nav-link" data-bs-toggle="tooltip" title="AddStudent">AddStudent</a>
+      </li>
+      <li class="nav-item">
+        <a *ngIf="loginService.isUserLoggedIn()" routerLink="profilecard" routerLinkActive="active"
+          class="nav-link" data-bs-toggle="tooltip" title="Profile">Profile</a>
+      </li>
+      <li class="nav-item">
+        <a *ngIf="loginService.isUserLoggedIn()" routerLink="contact" routerLinkActive="active"
+          class="nav-link" data-bs-toggle="tooltip" title="Contact">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a *ngIf="loginService.isUserLoggedIn()" (click)="confirmLogout()" routerLink="logout"
+          routerLinkActivate="active" class="nav-link" data-bs-toggle="tooltip" title="Logout">Logout</a>
+      </li>
+      <div class="animation start-studentlist"></div>
+    </ul>
+  </nav>
+  <nav>
+    <li class="nav-item">
+      <a *ngIf="loginService.isUserLoggedIn()" routerLink="welcome" routerLinkActive="active" class="nav-link"></a>
+    </li>
+    <li class="nav-item">
+      <a *ngIf="!loginService.isUserLoggedIn()" routerLink="login" routerLinkActive="active" class="nav-link"></a>
+    </li>
+  </nav>
+  <!--<h1 class="text-center"> {{title}} </h1>-->
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+</body>

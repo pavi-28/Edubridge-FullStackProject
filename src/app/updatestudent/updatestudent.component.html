@@ -1,0 +1,74 @@
+<body>
+    <!--UpdateStudent
+    -->
+   <!--<div class="col-md-6 offset-md-3">
+    <h3> Update Student </h3>
+    <form (ngSubmit) = "onSubmit()">
+    
+        <div class="form-group">
+            <label> StudentName</label>
+            <input type="text" class ="form-control" id = "studentName" placeholder="Enter Name" data-bs-toggle="tooltip" title="name"
+                [(ngModel)] = "student.studentName" name = "student.studentName">
+        </div><br>
+
+        <div class="form-group">
+            <label> Grade</label>
+            <input type="number" class ="form-control" id = "grade" placeholder="Enter grade" data-bs-toggle="tooltip" title="grade"
+                [(ngModel)] = "student.grade" name = "student.grade">
+        </div><br>
+    
+        <div class="form-group">
+            <label> ContactNo</label>
+            <input type="number" class ="form-control" id = "contactNo" placeholder="Contact" data-bs-toggle="tooltip" title="contactno"
+                [(ngModel)] = "student.contactNo" name = "student.contactNo">
+        </div><br>
+
+        <div class="form-group">
+            <label> Email</label>
+            <input type="email" class ="form-control" id = "email" placeholder="Email" data-bs-toggle="tooltip" title="email"
+                [(ngModel)] = "student.email" name = "student.email">
+        </div><br>
+
+        <div class="form-group">
+            <label> DateOfBirth</label>
+            <input type="date" class ="form-control" id = "dateOfBirth" placeholder="DateOfBirth" data-bs-toggle="tooltip" title="dateOfBirth"
+                [(ngModel)] = "student.dateOfBirth" name = "student.dateOfBirth">
+        </div><br>
+
+        <div class="form-group">
+            <label> City</label>
+            <input type="city" class ="form-control" id = "city" placeholder="City" data-bs-toggle="tooltip" title="city"
+                [(ngModel)] = "student.city" name = "student.city">
+        </div><br>
+    
+        <button class = "neon" type ="submit" data-bs-toggle="tooltip" title="click me">Submit</button>
+    
+    </form>
+    </div>-->
+
+    <!--Update the studentdetails for studentName, grade, contact and city by two way binding-->
+
+
+
+
+    <div class="row">
+        <div class="col2">
+            <form (ngSubmit)="onSubmit()">
+                <h2> Update Student</h2>
+                <input type="Studentname" name="student.studentName" placeholder="studentName" required="required"
+                    data-bs-toggle="tooltip" title="studentName" [(ngModel)]="student.studentName">
+                <input type="text" name="student.grade" placeholder="Grade" required="required"
+                    data-bs-toggle="tooltip" title="grade" [(ngModel)]="student.grade">
+                <input type="Email" name="student.email" placeholder="Email" required="required"
+                    data-bs-toggle="tooltip" title="email" [(ngModel)]="student.email">
+                <input type="ContactNo" name="student.contactNo" placeholder="ContactNo" required="required"
+                    data-bs-toggle="tooltip" title="contactNo" [(ngModel)]="student.contactNo">
+                <input type="date" name="student.dateOfBirth" placeholder="" required="required"
+                    data-bs-toggle="tooltip" title="dateOfBirth" [(ngModel)]="student.dateOfBirth">
+                <input type="City" name="student.city" placeholder="City" required="required" data-bs-toggle="tooltip"
+                    title="city" [(ngModel)]="student.city">
+                <input class="submit" type="Submit" placeholder="Submit" data-bs-toggle="tooltip" title="click me">
+            </form>
+        </div>
+    </div>
+</body>

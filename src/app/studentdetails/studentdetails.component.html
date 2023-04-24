@@ -1,0 +1,30 @@
+<body>
+<!-- Display all the details of the student using a particular Id-->
+
+    <div class="main">
+        <div class="view">
+            <h3> View Student Details</h3>
+            <div class="user-box">
+                <div>
+                    <label> <b> StudentName: </b></label> {{student.studentName}}
+                </div>
+                <div>
+                    <label> <b> Grade: </b></label> {{student.grade}}
+                </div>
+                <div>
+                    <label> <b> ContactNo: </b></label> {{student.contactNo}}
+                </div>
+                <div>
+                    <label> <b> Email: </b></label> {{student.email}}
+                </div>
+                <div>
+                    <label> <b> DateOfBirth: </b></label> {{student.dateOfBirth}}
+                </div>
+                <div>
+                    <label> <b> City: </b></label> {{student.city}}
+                </div>
+                <button (click)="View()" class="glow-on-hover">Back</button>
+            </div>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,15 @@
+<body>
+    <div class="row">
+        <div class="col1"><img src="..\assets\contactusimg.jpg" ></div>
+        <div class="col2">
+            <form>
+                <h2>Contact us</h2>
+                <input type="Username" name="username"placeholder="Username" required="required" data-bs-toggle="tooltip" title="name"  [(ngModel)]="username">
+                <input type="Email" name="email"placeholder="Email" required="required" data-bs-toggle="tooltip" title="email"  [(ngModel)]="email">
+                <input type="Subject" name="subject" placeholder="Subject" required="required" data-bs-toggle="tooltip" title="subject"  [(ngModel)]="subject">
+                <input type="Comments" name="comments" placeholder="Comments" required="required" data-bs-toggle="tooltip" title="comments"  [(ngModel)]="comments">
+                <input (click)="contact()" class="submit" type="Submit" placeholder="Submit" data-bs-toggle="tooltip" title="click me">
+            </form>
+        </div>
+    </div>
+</body>
